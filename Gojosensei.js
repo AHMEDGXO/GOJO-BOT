@@ -1028,6 +1028,15 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
             reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
             break
+case 'waifu': {
+			    
+				reply(mess.wait)
+			    var query = ["waifu","waifu aesthetic","waifu hd"]
+                var data = await pinterest(pickRandom(query))
+				var but = [{buttonId: `/waifu`, buttonText: { displayText: "Get Again Pict" }, type: 1 }]
+				conn.sendMessage(from, { caption: "Random Waifu", image: { url: pickRandom(data.result) }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: msg })
+			    limitAdd(sender, limit)
+ 			    break
             case 'guess': {
                 if (!text) return replay(`Example : ${prefix + command} song\n\nOption : \n1. music\n2. picture (indo)\n3. word\n4. sentence\n5. lyrics (indo)\n6. blank (indo)`)
                 if (args[0] === "song") {
