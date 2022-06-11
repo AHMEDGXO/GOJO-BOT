@@ -1034,7 +1034,7 @@ case 'waifu1': {
 			    var query = ["waifu","waifu aesthetic","waifu hd"]
                 var data = await pinterest(pickRandom(query))
 				var but = [{buttonId: `/waifu`, buttonText: { displayText: "Get Again Pict" }, type: 1 }]
-				conn.sendMessage(from, { caption: "Random Waifu", image: { url: pickRandom(data.result) }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: msg })
+				GojoMdNx.sendMessage(from, { caption: "Random Waifu", image: { url: pickRandom(data.result) }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: m })
 			    limitAdd(sender, limit)
  			    break
             case 'guess': {
