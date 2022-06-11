@@ -1028,7 +1028,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
             reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
             break
-case 'waifu': {
+case 'waifu1': {
 			    
 				reply(mess.wait)
 			    var query = ["waifu","waifu aesthetic","waifu hd"]
