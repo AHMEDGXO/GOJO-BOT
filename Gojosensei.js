@@ -1037,6 +1037,7 @@ case 'waifuuu': {
 				GojoMdNx.sendMessage(from, { caption: "Random Waifu", image: { url: pickRandom(data.result) }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: m })
 			   
  			    break
+}
             case 'guess': {
                 if (!text) return replay(`Example : ${prefix + command} song\n\nOption : \n1. music\n2. picture (indo)\n3. word\n4. sentence\n5. lyrics (indo)\n6. blank (indo)`)
                 if (args[0] === "song") {
